@@ -14,6 +14,8 @@
 		FFC7459A24D6EEE400E84D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC7459924D6EEE400E84D83 /* Assets.xcassets */; };
 		FFC7459D24D6EEE400E84D83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC7459C24D6EEE400E84D83 /* Preview Assets.xcassets */; };
 		FFC745A024D6EEE400E84D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC7459E24D6EEE400E84D83 /* LaunchScreen.storyboard */; };
+		FFC745A924D6EFD400E84D83 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC745A724D6EFD400E84D83 /* Item+CoreDataClass.swift */; };
+		FFC745AA24D6EFD400E84D83 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC745A824D6EFD400E84D83 /* Item+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		FFC7459C24D6EEE400E84D83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FFC7459F24D6EEE400E84D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFC745A124D6EEE400E84D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFC745A724D6EFD400E84D83 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FFC745A824D6EFD400E84D83 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		FFC7458F24D6EEE200E84D83 /* CoreDataPlusModel */ = {
 			isa = PBXGroup;
 			children = (
+				FFC745A724D6EFD400E84D83 /* Item+CoreDataClass.swift */,
+				FFC745A824D6EFD400E84D83 /* Item+CoreDataProperties.swift */,
 				FFC7459024D6EEE200E84D83 /* AppDelegate.swift */,
 				FFC7459224D6EEE200E84D83 /* SceneDelegate.swift */,
 				FFC7459724D6EEE200E84D83 /* ContentView.swift */,
@@ -149,6 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC745AA24D6EFD400E84D83 /* Item+CoreDataProperties.swift in Sources */,
+				FFC745A924D6EFD400E84D83 /* Item+CoreDataClass.swift in Sources */,
 				FFC7459624D6EEE200E84D83 /* CoreDataPlusModel.xcdatamodeld in Sources */,
 				FFC7459124D6EEE200E84D83 /* AppDelegate.swift in Sources */,
 				FFC7459824D6EEE200E84D83 /* ContentView.swift in Sources */,
