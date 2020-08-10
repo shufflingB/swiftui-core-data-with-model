@@ -11,27 +11,37 @@ import SwiftUI
 struct ButtonGrp: View {
     let itemAddFn: () -> Void
     let itemAddFlaggedFn: () -> Void
+    let saveAllFn: () -> Void
     let itemsDeleteAllFn: () -> Void
 
     var body: some View {
         VStack {
             HStack {
                 Button(action: itemAddFn) {
-                    Text("Add Ordinary Item")
+                    Text("Add Ordinary")
                 }
                 .padding(5)
 
                 Spacer()
 
                 Button(action: itemAddFlaggedFn) {
-                    Text("Add Flagged Item")
+                    Text("Add Flagged")
                 }
                 .padding(5)
             }
-            Button(action: itemsDeleteAllFn) {
-                Text("Delete all").accentColor(.red)
+            HStack {
+                Button(action: saveAllFn) {
+                    Text("Save")
+                }
+                .padding(5)
+
+                Spacer()
+
+                Button(action: itemsDeleteAllFn) {
+                    Text("Delete all").accentColor(.red)
+                }
+                .padding(5)
             }
-            .padding(5)
         }
     }
 }
@@ -41,7 +51,10 @@ struct ButtonGrp_Previews: PreviewProvider {
         ButtonGrp(
             itemAddFn: { print("itemAdd pressed") },
             itemAddFlaggedFn: { print("iteamAdd flagged pressed") },
-            itemsDeleteAllFn: { print("Delete all items pressed") })
-            .previewLayout(.sizeThatFits)
+            saveAllFn: { print("Save all items pressed") },
+            itemsDeleteAllFn: { print("Delete all items pressed") }
+        )
+
+        .previewLayout(.sizeThatFits)
     }
 }

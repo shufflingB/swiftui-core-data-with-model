@@ -12,7 +12,7 @@ struct DisplayCounts: View {
     let title: String
     let itemsTotal: Int
     let itemsFlaggedTotal: Int
-    let itemFirstFlaggedId: String?
+    let isFlaggedItemCountEven: Bool
 
     var body: some View {
         VStack {
@@ -20,7 +20,7 @@ struct DisplayCounts: View {
                 Text("Inside \(title)")
                     .font(.headline)
 
-                Text("Total items = \(itemsTotal), Flagged items \(itemsFlaggedTotal), First flagged = \(itemFirstFlaggedId ?? "N/A")")
+                Text("Total items = \(itemsTotal), Flagged items \(itemsFlaggedTotal), Flagged count even = \(String(isFlaggedItemCountEven))")
                     .font(.subheadline)
             }
         }
@@ -33,7 +33,7 @@ struct DisplayCounts_Previews: PreviewProvider {
             title: "dummyComponent",
             itemsTotal: 5,
             itemsFlaggedTotal: 3,
-            itemFirstFlaggedId: "dummyId"
+            isFlaggedItemCountEven: true
         )
         .previewLayout(.sizeThatFits)
     }

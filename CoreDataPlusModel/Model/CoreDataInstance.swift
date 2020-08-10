@@ -15,6 +15,7 @@ import CoreData
   2. Is only created one within the hierarchy that it is used in => no need for singleton stuff
  */
 
+/*
 class CoreDataInstance {
     /*
      Define singleton as per https://www.hackingwithswift.com/example-code/language/what-is-a-singleton
@@ -60,3 +61,4 @@ class CoreDataInstance {
         return shared.persistentContainer.viewContext
     }
 }
+*/
