@@ -2,15 +2,16 @@
 
 ***TL;DR;** Demo/test project showcasing easier to maintain Core Data processing in SwiftUI applications by abstracting Core Data processing away from the UI and into its own App Model.*
 
-***Longer***
+***Why***
 
-Good SW engineering practice seeks to achieve a [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns). 
+Good SW engineering practice seeks to achieve a [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns). As of 10th of August 2020, the 'normal' SwiftUI approach to integration of Core Data involves data operations (using `@FetchRequest` and Core Data's Managed Object Context) within the immediate hierarchy of the `View` components that consume and create that same data. 
 
-As of 10th of August 2020, the 'normal' SwiftUI integration of Core Data involves the integration of data operations (using `@FetchRequest` and Core Data's Managed Object Context) within View components that consume and create the data. As convenient as it is to work with initially (particularly `@FetchRequest`) - splattering Core Data and associated processing throughout an application's UI components disobeys the Separation of Concerns principle create apps that are more difficult to maintain.
+As convenient as it is to work with initially (particularly `@FetchRequest`) - splattering Core Data and associated processing throughout an application's UI components disobeys the Separation of Concerns and is liable to result in apps that are difficult maintain.
 
-This project demonstrates, alongside the conventional @FetchRequest/MOC approach for comparison, the usage of an alternative based on an App model that includes the Core Data to achieve a good Separation of Concerns.  
+***What's demonstrated***
 
-**What's demonstrated**
+Alongside the conventional `@FetchRequest`/MOC approach for comparison, this project demonstrates how Core Data can be handled within an app's model, thereby separating data and UI concerns, while still maintaining ease of use.
+
 - Alternative model based Core Data integration that:
 	1. Keeps data synchronised across the views using a `Combine`publisher for the Core Data results.
 	2. Is almost as convenient to work with as `@FetchRequest`
