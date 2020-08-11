@@ -38,4 +38,4 @@ When normal and `flagged` Items are Added, the data across all of the View compo
 ## Notes
 
 1. The code contains copious comments and should be pretty self explanatory.
-2. Kudos and thanks to Apostolos Giokas' for his excellent [article on Medium ](https://medium.com/better-programming/combine-publishers-and-core-data-424b68fe9473) that contained the Core Data `Combine` publisher class implementation.
+2. Kudos and thanks to Apostolos Giokas for his excellent [article on Medium ](https://medium.com/better-programming/combine-publishers-and-core-data-424b68fe9473) that contained the Core Data `Combine` publisher class implementation.
