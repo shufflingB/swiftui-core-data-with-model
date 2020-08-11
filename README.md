@@ -6,7 +6,7 @@
 
 Good SW engineering practice seeks to achieve a [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns). 
 
-As of 10th of August 2020, the 'normal' SwiftUI integration of Core Data is largely based on the use of @FetchRequest and the use Managed Object Context to mutate, directly alongside the View components that consume and create the data. As convenient and easy as it is to work with this initially, splattering Core Data and associated processing throughout the application's UI components is an engineering anti-pattern.
+As of 10th of August 2020, the 'normal' SwiftUI integration of Core Data is largely based on @FetchRequest to retrieve and the use Managed Object Context to mutate, directly alongside the View components that consume and create the data. As convenient and easy as it is to work with this initially, splattering Core Data and associated processing throughout the application's UI components is an engineering anti-pattern.
 
 This project demonstrates, alongside the conventional @FetchRequest/MOC approach for comparison, the usage of an alternative based on an App model that includes the Core Data to achieve a good Separation of Concerns.  
 
