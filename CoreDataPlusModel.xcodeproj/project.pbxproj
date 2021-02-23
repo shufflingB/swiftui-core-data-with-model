@@ -16,7 +16,7 @@
 		FF5DF81E24DC480600457547 /* Bottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DF81D24DC480600457547 /* Bottom.swift */; };
 		FF5DF82024DC4ADA00457547 /* DisplayCounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DF81F24DC4ADA00457547 /* DisplayCounts.swift */; };
 		FF74964224E02B6D001029CD /* CoreDataPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF74964124E02B6D001029CD /* CoreDataPublisher.swift */; };
-		FF93BCCB24D84C7C001E0047 /* CoreDataPlusModelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93BCCA24D84C7C001E0047 /* CoreDataPlusModelApp.swift */; };
+		FF93BCCB24D84C7C001E0047 /* AppRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93BCCA24D84C7C001E0047 /* AppRoot.swift */; };
 		FFC7459624D6EEE200E84D83 /* AppCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFC7459424D6EEE200E84D83 /* AppCoreData.xcdatamodeld */; };
 		FFC7459824D6EEE200E84D83 /* Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7459724D6EEE200E84D83 /* Top.swift */; };
 		FFC7459A24D6EEE400E84D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC7459924D6EEE400E84D83 /* Assets.xcassets */; };
@@ -36,7 +36,7 @@
 		FF74964124E02B6D001029CD /* CoreDataPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPublisher.swift; sourceTree = "<group>"; };
 		FF74964324E1BF70001029CD /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		FF74964424E1BF70001029CD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FF93BCCA24D84C7C001E0047 /* CoreDataPlusModelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPlusModelApp.swift; sourceTree = "<group>"; };
+		FF93BCCA24D84C7C001E0047 /* AppRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoot.swift; sourceTree = "<group>"; };
 		FFC7458D24D6EEE200E84D83 /* CoreDataPlusModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPlusModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC7459524D6EEE200E84D83 /* CoreDataPlusModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataPlusModel.xcdatamodel; sourceTree = "<group>"; };
 		FFC7459724D6EEE200E84D83 /* Top.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top.swift; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 			children = (
 				FFC745A124D6EEE400E84D83 /* Info.plist */,
 				FFC7459E24D6EEE400E84D83 /* LaunchScreen.storyboard */,
-				FF93BCCA24D84C7C001E0047 /* CoreDataPlusModelApp.swift */,
+				FF93BCCA24D84C7C001E0047 /* AppRoot.swift */,
 				FFEAA5E024DAC235002E4404 /* Views */,
 				FFC7459924D6EEE400E84D83 /* Assets.xcassets */,
 				FF0005C224DAC0FE007EA460 /* Model */,
@@ -201,7 +201,7 @@
 				FF2BBCC324DDCA7600C5B087 /* Item+CoreDataProperties.swift in Sources */,
 				FFC7459624D6EEE200E84D83 /* AppCoreData.xcdatamodeld in Sources */,
 				FFC7459824D6EEE200E84D83 /* Top.swift in Sources */,
-				FF93BCCB24D84C7C001E0047 /* CoreDataPlusModelApp.swift in Sources */,
+				FF93BCCB24D84C7C001E0047 /* AppRoot.swift in Sources */,
 				FF2BBCC524DDDB8D00C5B087 /* EmptyMiddle.swift in Sources */,
 				FF5DF82024DC4ADA00457547 /* DisplayCounts.swift in Sources */,
 				FF5DF81E24DC480600457547 /* Bottom.swift in Sources */,

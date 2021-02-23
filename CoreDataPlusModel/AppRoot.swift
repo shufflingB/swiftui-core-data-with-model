@@ -11,19 +11,21 @@ import os.log
 import SwiftUI
 
 @main
-struct CoreDataPlusModelApp: App {
+struct AppRoot: App {
     @Environment(\.scenePhase) private var scenePhase
 
     /* Create an instance of the model wrapped by @StateObject to indicate to SwiftUI that
      this part of of the app's state is owned by this component in the hierarchy.
 
      StateObject instantiates once just before view is rendered and expires automatically when
-     the container it is part of is removed. NB: this removes need for creating Singleton.
+     the container it is part of is destroyed. It persists even when its children are rendering.
+     NB: As this is only ever going to be created once, if removes the need have an AppModel
+     that is a singelton.
      */
     @StateObject private var model = AppModel()
 
     var body: some Scene {
-        /* Want to demo both approachs so add the MOC to the environment so that @FetchRequest
+        /* Want to demo both approaches so add the MOC to the environment so that @FetchRequest
          works in child views. Add the model Object to the environment so that we can get hold
          of its capabilites */
         WindowGroup {
@@ -31,10 +33,6 @@ struct CoreDataPlusModelApp: App {
                 .environment(\.managedObjectContext, model.managedObjectContext)
                 .environmentObject(model)
         }
-
-        /* Possible bug: Doesn't do anything as of XCode 12.0 beta 4 . See
-         https://developer.apple.com/forums/thread/650632
-         */
         .onChange(of: scenePhase) { phase in
             switch phase {
             case .active:
