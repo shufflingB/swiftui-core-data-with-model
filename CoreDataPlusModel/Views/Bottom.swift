@@ -19,3 +19,13 @@ struct Bottom: View {
         ).border(Color.green).padding()
     }
 }
+
+struct Bottom_Previews: PreviewProvider {
+    static let dummyModel = AppModel(inMemory: true)
+    static var previews: some View {
+        Bottom()
+            .environment(\.managedObjectContext, dummyModel.managedObjectContext)
+            .environmentObject(dummyModel)
+            .previewLayout(.sizeThatFits)
+    }
+}

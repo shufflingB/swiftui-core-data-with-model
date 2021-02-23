@@ -20,7 +20,6 @@
 		FFC7459824D6EEE200E84D83 /* Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7459724D6EEE200E84D83 /* Top.swift */; };
 		FFC7459A24D6EEE400E84D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC7459924D6EEE400E84D83 /* Assets.xcassets */; };
 		FFC7459D24D6EEE400E84D83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC7459C24D6EEE400E84D83 /* Preview Assets.xcassets */; };
-		FFC745A024D6EEE400E84D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC7459E24D6EEE400E84D83 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +39,6 @@
 		FFC7459724D6EEE200E84D83 /* Top.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top.swift; sourceTree = "<group>"; };
 		FFC7459924D6EEE400E84D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFC7459C24D6EEE400E84D83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FFC7459F24D6EEE400E84D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFC745A124D6EEE400E84D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				FFC745A124D6EEE400E84D83 /* Info.plist */,
-				FFC7459E24D6EEE400E84D83 /* LaunchScreen.storyboard */,
 				FF93BCCA24D84C7C001E0047 /* AppRoot.swift */,
 				FFEAA5E024DAC235002E4404 /* Views */,
 				FFC7459924D6EEE400E84D83 /* Assets.xcassets */,
@@ -177,7 +174,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC745A024D6EEE400E84D83 /* LaunchScreen.storyboard in Resources */,
 				FFC7459D24D6EEE400E84D83 /* Preview Assets.xcassets in Resources */,
 				FFC7459A24D6EEE400E84D83 /* Assets.xcassets in Resources */,
 			);
@@ -205,17 +201,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		FFC7459E24D6EEE400E84D83 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FFC7459F24D6EEE400E84D83 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FFC745A224D6EEE400E84D83 /* Debug */ = {

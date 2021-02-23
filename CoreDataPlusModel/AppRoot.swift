@@ -12,6 +12,7 @@ import SwiftUI
 
 @main
 struct AppRoot: App {
+    
     @Environment(\.scenePhase) private var scenePhase
 
     /* Create an instance of the model wrapped by @StateObject to indicate to SwiftUI that
@@ -22,7 +23,17 @@ struct AppRoot: App {
      NB: As this is only ever going to be created once, if removes the need have an AppModel
      that is a singelton.
      */
-    @StateObject private var model = AppModel()
+    
+    @StateObject private var model: AppModel
+
+    init(appModel: AppModel) {
+        _model = StateObject(wrappedValue: appModel)
+    }
+
+    init() {
+        _model = StateObject(wrappedValue: AppModel())
+    }
+    
 
     var body: some Scene {
         /* Want to demo both approaches so add the MOC to the environment so that @FetchRequest

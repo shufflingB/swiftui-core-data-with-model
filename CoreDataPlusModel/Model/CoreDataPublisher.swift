@@ -23,7 +23,7 @@ class CoreDataPublisher<Entity>: NSObject, NSFetchedResultsControllerDelegate, P
     private let subject: CurrentValueSubject<[Entity], Failure>
     private var resultController: NSFetchedResultsController<NSManagedObject>?
     private var subscriptions = 0
-
+    
     init(request: NSFetchRequest<Entity>, context: NSManagedObjectContext) {
         if request.sortDescriptors == nil { request.sortDescriptors = [] }
         self.request = request
@@ -101,4 +101,6 @@ class CoreDataPublisher<Entity>: NSObject, NSFetchedResultsControllerDelegate, P
             fetchPublisher = nil
         }
     }
+
+
 }

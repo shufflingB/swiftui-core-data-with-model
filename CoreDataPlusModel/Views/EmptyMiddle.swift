@@ -20,8 +20,11 @@ struct EmptyMiddle: View {
 }
 
 struct EmptyMiddle_Previews: PreviewProvider {
+    static let dummyModel = AppModel(inMemory: true)
     static var previews: some View {
         EmptyMiddle()
+            .environment(\.managedObjectContext, dummyModel.managedObjectContext)
+            .environmentObject(dummyModel)
             .previewLayout(.sizeThatFits)
     }
 }

@@ -52,3 +52,12 @@ struct Top: View {
         }
     }
 }
+
+struct Top_Previews: PreviewProvider {
+    static let dummyModel = AppModel(inMemory: true)
+    static var previews: some View {
+        Top()
+            .environment(\.managedObjectContext, dummyModel.managedObjectContext)
+            .environmentObject(dummyModel)
+    }
+}
