@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FF0A111F24D9E5A200BAFCD9 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0A111E24D9E5A200BAFCD9 /* AppModel.swift */; };
 		FF2302C924DC5DE0001B2A59 /* ButtonGrp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2302C824DC5DE0001B2A59 /* ButtonGrp.swift */; };
-		FF2302CB24DD6069001B2A59 /* CoreDataInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2302CA24DD6069001B2A59 /* CoreDataInstance.swift */; };
 		FF2BBCC224DDCA7600C5B087 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BBCC024DDCA7600C5B087 /* Item+CoreDataClass.swift */; };
 		FF2BBCC324DDCA7600C5B087 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BBCC124DDCA7600C5B087 /* Item+CoreDataProperties.swift */; };
 		FF2BBCC524DDDB8D00C5B087 /* EmptyMiddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BBCC424DDDB8D00C5B087 /* EmptyMiddle.swift */; };
@@ -27,7 +26,6 @@
 /* Begin PBXFileReference section */
 		FF0A111E24D9E5A200BAFCD9 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		FF2302C824DC5DE0001B2A59 /* ButtonGrp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGrp.swift; sourceTree = "<group>"; };
-		FF2302CA24DD6069001B2A59 /* CoreDataInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataInstance.swift; sourceTree = "<group>"; };
 		FF2BBCC024DDCA7600C5B087 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FF2BBCC124DDCA7600C5B087 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FF2BBCC424DDDB8D00C5B087 /* EmptyMiddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyMiddle.swift; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				FF0A111E24D9E5A200BAFCD9 /* AppModel.swift */,
-				FF2302CA24DD6069001B2A59 /* CoreDataInstance.swift */,
 				FFC7459424D6EEE200E84D83 /* AppCoreData.xcdatamodeld */,
 				FF2BBCC024DDCA7600C5B087 /* Item+CoreDataClass.swift */,
 				FF2BBCC124DDCA7600C5B087 /* Item+CoreDataProperties.swift */,
@@ -195,7 +192,6 @@
 			files = (
 				FF2302C924DC5DE0001B2A59 /* ButtonGrp.swift in Sources */,
 				FF74964224E02B6D001029CD /* CoreDataPublisher.swift in Sources */,
-				FF2302CB24DD6069001B2A59 /* CoreDataInstance.swift in Sources */,
 				FF0A111F24D9E5A200BAFCD9 /* AppModel.swift in Sources */,
 				FF2BBCC224DDCA7600C5B087 /* Item+CoreDataClass.swift in Sources */,
 				FF2BBCC324DDCA7600C5B087 /* Item+CoreDataProperties.swift in Sources */,
