@@ -17,7 +17,7 @@ Alongside the conventional `@FetchRequest`/MOC approach for comparison, this pro
 	2. Is almost as convenient to work with as `@FetchRequest`
 - A conventional `@FetchRequest` Core Data integration for comparison.
 - How to setup Core Data using Xcode 12 and its `SwiftUI App` `Life Cycle` template I.e. without an `AppDelegate.swift` and `SceneDelegate.swift` to setup the Core Data `persistentContainer`, but with a model and the the usage of `@StateObject` to do the same.
-- Use of the iOS14/SwiftUI's @StateObject`, `@Environment`, `@EnvironmentObject`, `@ObservedObject` and `@FetchRequest` property wrappers.
+- Use of the iOS14/SwiftUI's `@StateObject`, `@Environment`, `@EnvironmentObject`, `@ObservedObject` and `@FetchRequest` property wrappers.
 
 ## Installation
 
